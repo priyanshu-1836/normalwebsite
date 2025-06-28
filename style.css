@@ -3,81 +3,85 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: sans-serif;
-  background: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
 }
-nav {
-  background: #333;
+
+header {
+  background-color: #222;
   color: white;
-  padding: 1em;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-nav h2 {
-  margin-left: 1em;
+
+nav h1 {
+  font-size: 1.5rem;
 }
+
 nav ul {
-  display: flex;
   list-style: none;
-  margin-right: 1em;
+  display: flex;
+  gap: 20px;
 }
-nav ul li {
-  margin-left: 1em;
-}
+
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
-.hero {
+
+main {
+  padding: 40px 20px;
   text-align: center;
-  padding: 50px 20px;
-  background: #fff;
 }
-.hero h1 {
-  font-size: 2.5em;
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
-.hero p {
-  margin-top: 10px;
-  font-size: 1.2em;
-}
+
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  font-size: 16px;
-  background: #007bff;
+  background-color: #007acc;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
-.cards {
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.features {
   display: flex;
-  justify-content: space-around;
-  margin: 40px 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
 }
+
 .card {
   background: white;
   padding: 20px;
-  width: 30%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
-  border-radius: 10px;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
 }
+
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
+  background-color: #222;
   color: white;
-}
-@media (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card {
-    width: 80%;
-    margin-bottom: 20px;
-  }
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
 }

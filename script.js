@@ -1,3 +1,3 @@
-function showMessage() {
-  document.getElementById('message').textContent = "Thanks for clicking! 😊";
+function showThanks() {
+  document.getElementById("msg").textContent = "Thanks for clicking! 😊";
 }

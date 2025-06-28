@@ -1,19 +1,83 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e0f7fa;
-  text-align: center;
-  padding: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {
-  color: #00796b;
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  color: #333;
+}
+nav {
+  background: #333;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+nav h2 {
+  margin-left: 1em;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 1em;
+}
+nav ul li {
+  margin-left: 1em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+.hero h1 {
+  font-size: 2.5em;
+}
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2em;
 }
 button {
+  margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
-#message {
-  margin-top: 20px;
-  color: #d32f2f;
-  font-size: 18px;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }

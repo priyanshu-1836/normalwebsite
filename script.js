@@ -1,3 +1,3 @@
 function sayHello() {
-  alert("Hello Bhai! Website chal rahi hai 🚀");
+  alert("Thanks for clicking 🚀");
 }

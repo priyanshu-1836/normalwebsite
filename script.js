@@ -1,9 +1,7 @@
 function sayHello() {
   alert("Thanks for visiting my first website 🚀");
 }
-function showAlert() {
-  document.getElementById("alertBox").style.display = "block";
-}
-function closeAlert() {
-  document.getElementById("alertBox").style.display = "none";
+function showAbout() {
+  const about = document.getElementById("aboutSection");
+  about.style.display = "block";
 }

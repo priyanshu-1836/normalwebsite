@@ -17,9 +17,13 @@
   <script src="script.js"></script> 
   <button type="button" class="btn btn-primary"
     onclick="showAlert()">about us</button> 
-  <div id="alertBox" class="alert alert-danger" role="alert"
-    style="display: none;"> 
-  Sorry! No data found.
+  <div id="alertBox" class="alert alert-danger text center"
+    role="alert"
+     style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            z-index: 9999; width: 300px;">
+
+  <button type="button" class="btn-close float-end" aria-label="Close" onclick="closeAlert()"></button>
+  <strong>Sorry!</strong> No data found.
 </div>
 </body> 
 </html>

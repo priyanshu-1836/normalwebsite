@@ -13,5 +13,5 @@ function openResume() {
 
 function showAbout() {
   const about = document.getElementById("aboutSection");
-  about.style.display = "block";
+  about.style.display = "block"; // About Us dikhana
 }

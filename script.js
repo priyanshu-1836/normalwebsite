@@ -1,5 +1,14 @@
 function sayHello() {
-  alert("Thanks for visiting my website! 🎉");
+  document.querySelector(".content-box").style.display = "none"; // Hide welcome section
+  document.getElementById("mainSection").style.display = "block"; // Show calculator/resume options
+}
+
+function openCalculator() {
+  alert("Calculator feature coming soon!");
+}
+
+function openResume() {
+  alert("Resume builder coming soon!");
 }
 
 function showAbout() {

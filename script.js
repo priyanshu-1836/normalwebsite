@@ -1,5 +1,5 @@
 function sayHello() {
-  alert("Thanks for visiting my colorful website! 🎉");
+  alert("Thanks for visiting my website! 🎉");
 }
 
 function showAbout() {

@@ -1,61 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My first Website</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-  <!-- 💫 Stylish RGB Background CSS -->
-  <style>
-    body {
-      background: linear-gradient(-45deg, green, blue, violet, pink, red);
-      background-size: 500% 500%;
-      animation: rgbGlow 15s ease infinite;
-      min-height: 100vh;
-    }
-
-    @keyframes rgbGlow {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }  
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RGB Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
+  <div class="content-box">
+    <h1>🙏 Welcome to my RGB Website 🙏</h1>
+    <p>How are you? 🌈</p>
+    <button onclick="sayHello()">Click Me</button>
+    <button onclick="showAbout()">About Us</button>
 
-  <div class="content-box text-center">
-    <h1>🙏 Welcome to my first & simple Website 🙏</h1>
-    <p>How are you? 🌈</p>
+    <div id="aboutSection" style="display:none; margin-top: 20px;" class="alert">
+      <h3>About Me</h3>
+      <p>Hi, my name is Priyanshu. I'm learning web development using HTML, CSS, Bootstrap, and JavaScript.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/yourusername" target="_blank"><i class="bi bi-instagram"></i> Instagram</a><br>
+        <a href="https://facebook.com/yourusername" target="_blank"><i class="bi bi-facebook"></i> Facebook</a><br>
+        <a href="https://github.com/yourusername" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
 
-    <button onclick="sayHello()" class="btn btn-success m-2">Click Me</button>
-    <button type="button" class="btn btn-primary m-2" onclick="showAbout()">About Us</button>
-
-    <!-- About Section -->
-    <div id="aboutSection" style="display: none; margin-top: 20px;" class="alert alert-info text-start">
-      <h4>About Me</h4>
-      <p>Hii, My name is Priyanshu Patel . This is my first project & I'm learning web development using HTML, CSS, Bootstrap, and JavaScript.</p>
-
-      <!-- Social Media with Icons -->
-      <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
-        <a href="https://www.instagram.com/enough__priyanshu" target="_blank" class="btn btn-outline-danger btn-sm">
-          <i class="bi bi-instagram"></i> Instagram
-        </a>
-        <a href="https://www.youtube.com/@DZEDITING444" target="_blank" class="btn btn-outline-primary btn-sm">
-          <i class="bi bi-youtube"></i> You Tube
-        </a>
-        <a href="https://github.com/priyanshu-1836" target="_blank" class="btn btn-outline-dark btn-sm">
-          <i class="bi bi-github"></i> GitHub
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

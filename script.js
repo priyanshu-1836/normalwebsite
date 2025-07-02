@@ -6,6 +6,10 @@ function sayHello() {
 function openCalculator() {
   alert("Calculator feature coming soon!");
 }
+function goBack() {
+  document.getElementById("mainSection").style.display = "none";
+  document.querySelector(".content-box").style.display = "block";
+}
 
 function openResume() {
   alert("Resume builder coming soon!");

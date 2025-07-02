@@ -11,6 +11,10 @@ function openResume() {
   alert("Resume builder coming soon!");
 }
 
+function openApplication() {
+  alert("Application creater coming soon!");
+}
+
 function showAbout() {
   const about = document.getElementById("aboutSection");
   about.style.display = "block"; // About Us dikhana

@@ -25,12 +25,15 @@
       </div>
     </div>
   </div>
-  <!-- Main Options Section -->
-  <div id="mainSection" style="display: none;" class="text-center mt-5">
-  <h2>What do you want?</h2>
-  <button class="btn btn-info m-2" onclick="openCalculator()">Calculator</button>
-  <button class="btn btn-warning m-2" onclick="openResume()">Create Resume</button>
+  <!-- Main Section -->
+<div id="mainSection" style="display: none;" class="d-flex flex-column align-items-center justify-content-center" >
+  <h2 class="mb-4">Choose an Option</h2>
+  <div class="d-flex gap-3">
+    <button class="btn btn-outline-success" onclick="openCalculator()">Calculator</button>
+    <button class="btn btn-outline-primary" onclick="openResume()">Create Resume</button>
   </div>
+  <button class="btn btn-secondary mt-4" onclick="goBack()">← Go Back</button>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
